@@ -1,0 +1,48 @@
+#Add sudo
+su -
+apt install sudo
+usermod -aG sudo seu_usuario
+#Precisa reiniciar
+
+#Mudar Repositoios
+sudo nano /etc/apt/sources.list
+Certifique-se de que as linhas terminem com main contrib non-free non-free-firmware. Deve ficar parecido com isto:
+deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+#Repositórios Oficiais
+
+deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+
+#Atualizações de Segurança
+
+deb http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+deb-src http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+
+#Updates (Pacotes que mudam rápido, como drivers e browsers)
+
+deb http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
+
+
+CODEC
+
+sudo apt update
+sudo apt install libavcodec-extra ffmpeg vlc
+sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-vaapi
+
+#Editar o Grub
+sudo nano /etc/default/grub
+GRUB_TIMEOUT=0
+GRUB_TIMEOUT_STYLE=hidden
+sudo update-grub
+
+
+IMPRESSORA
+
+sudo apt install \
+cups \
+cups-filters \
+printer-driver-brlaser \
+system-config-printer \
+avahi-daemon \
+simple-scan
