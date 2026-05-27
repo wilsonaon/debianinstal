@@ -23,6 +23,9 @@ deb-src http://security.debian.org/debian-security trixie-security main contrib 
 deb http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
 deb-src http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
 
+#FLATPAK
+sudo apt install flatpak plasma-discover-backend-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 CODEC
 
@@ -36,6 +39,9 @@ GRUB_TIMEOUT=0
 GRUB_TIMEOUT_STYLE=hidden
 sudo update-grub
 
+# REMOVER PROGRAMAS
+
+sudo apt autoremove akregator kontrast kmouth dragonplayer kmail juk xterm konqueror
 
 IMPRESSORA
 
