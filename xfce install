@@ -1,0 +1,16 @@
+sudo aptautoremove xterm xfburn
+
+sudo apt install xfce4-whiskermenu-plugin
+sudo apt install bibata-cursor-theme
+sudo apt install fonts-crosextra-caladea fonts-crosextra-carlito fonts-liberation2 fonts-liberation
+
+
+#Criando Alias chamando o Mousepad com sudo de TEXT
+
+echo "alias text='pkexec mousepad'" >> ~/.bashrc && source ~/.bashrc
+
+
+
+#Remover PEdido de Senha Navegador
+
+rm -rf ~/.local/share/keyrings/*
