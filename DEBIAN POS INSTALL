@@ -30,6 +30,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 CODEC
 
 sudo apt update
+sudo apt install firmware-linux firmware-linux-nonfree firmware-misc-nonfree
 sudo apt install libavcodec-extra ffmpeg vlc fonts-jetbrains-mono ttf-mscorefonts-installer fonts-recommended fonts-liberation
 sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-vaapi
 
