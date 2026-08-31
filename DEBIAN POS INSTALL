@@ -42,7 +42,7 @@ sudo update-grub
 
 # REMOVER PROGRAMAS
 
-sudo apt autoremove akregator kontrast kmouth dragonplayer kmail juk xterm konqueror
+sudo apt autoremove akregator kontrast kmouth dragonplayer kmail juk xterm konqueror kdeconnect imagemagick korganizer kaddressbook
 
 IMPRESSORA
 
