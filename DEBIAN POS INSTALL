@@ -6,6 +6,8 @@ usermod -aG sudo seu_usuario
 
 #Mudar Repositoios
 sudo nano /etc/apt/sources.list
+OU
+/etc/apt/sources.list.d/debian.sources
 Certifique-se de que as linhas terminem com main contrib non-free non-free-firmware. Deve ficar parecido com isto:
 deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
 #Repositórios Oficiais
